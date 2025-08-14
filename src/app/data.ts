@@ -12,6 +12,13 @@ type SocialLink = {
   link: string;
 };
 
+type Project = {
+  name: string;
+  description: string;
+  link: string;
+  id: string;
+};
+
 export const WORK_EXPERIENCE: WorkExperience[] = [
   {
     company: "Paynet Payment Systems",
@@ -60,6 +67,37 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     end: "2017",
     link: "https://www.paynet.com.tr/",
     id: "work6",
+  },
+];
+
+export const PROJECTS: Project[] = [
+  {
+    id: "paynet-frontend-architecture",
+    name: "Paynet Frontend Architecture & Microfrontends",
+    description:
+      "Led frontend architecture initiatives for a high-volume fintech platform. Implemented a microfrontend structure and reusable design components across multiple teams, improving scalability and developer experience. Optimized webpack and CI/CD pipelines, reducing build times by 35%.",
+    link: "https://www.paynet.com.tr/",
+  },
+  {
+    id: "axya-modernization",
+    name: "Axya Web Platform Modernization",
+    description:
+      "Migrated 90% of a legacy codebase to modern React and Redux Toolkit with a modular architecture. Delivered core modules including Purchase Orders, RFQs, and Analytics. Authored onboarding and architecture documentation, reducing developer onboarding time by 50%.",
+    link: "https://www.axya.co/",
+  },
+  {
+    id: "netguru-cross-platform",
+    name: "Netguru Cross-Platform Applications",
+    description:
+      "Led development of web and mobile applications using ReactJS and React Native. Implemented Cypress test suites to ensure accuracy and reliability. Delivered features in collaboration with distributed teams across three countries.",
+    link: "https://www.netguru.com/",
+  },
+  {
+    id: "appcircle-ci-cd-platform",
+    name: "Appcircle Mobile CI/CD Frontend",
+    description:
+      "Built the frontend application for a mobile CI/CD platform using ReactJS and Redux. Designed and implemented a modern UI with SCSS/CSS. Integrated secure data storage and processing using Node.js and MongoDB.",
+    link: "https://appcircle.io/",
   },
 ];
 
