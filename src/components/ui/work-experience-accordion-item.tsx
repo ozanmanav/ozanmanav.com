@@ -29,7 +29,7 @@ export default function WorkExperienceAccordionItem({
     <div className="relative overflow-hidden rounded-2xl bg-zinc-300/30 dark:bg-zinc-600/30">
       <button
         onClick={onToggle}
-        className="relative w-full text-left p-[1px] focus:outline-none"
+        className="relative w-full text-left p-[1px] focus:outline-none cursor-pointer"
       >
         {isOpen && (
           <Spotlight
