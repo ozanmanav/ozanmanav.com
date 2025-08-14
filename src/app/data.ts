@@ -1,10 +1,11 @@
-type WorkExperience = {
+export type WorkExperience = {
   company: string;
   title: string;
   start: string;
   end: string;
   link: string;
   id: string;
+  description: string[];
 };
 
 type SocialLink = {
@@ -27,6 +28,13 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     end: "Present",
     link: "https://www.paynet.com.tr/",
     id: "work1",
+    description: [
+      "Lead frontend architecture initiatives for a high-volume fintech platform.",
+      "Introduced microfrontend structure and reusable design components across teams.",
+      "Reduced frontend build time by 35% through Webpack and CI/CD pipeline optimizations.",
+      "Directed async-first development processes across distributed teams.",
+      "Applied advanced data visualization techniques using D3.js.",
+    ],
   },
   {
     company: "Axya",
@@ -35,6 +43,12 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     end: "2023",
     link: "https://axya.co/",
     id: "work2",
+    description: [
+      "Migrated 90% of the legacy codebase to modern React, Redux Toolkit, and modular architecture.",
+      "Developed mission-critical modules such as Purchase Orders, RFQs, and Analytics.",
+      "Led code reviews and refactoring strategy to ensure scalability and maintainability.",
+      "Authored onboarding and architecture documentation adopted by 10+ developers, reducing onboarding time by 50%.",
+    ],
   },
   {
     company: "Netguru",
@@ -43,6 +57,12 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     end: "2021",
     link: "https://www.netguru.com/",
     id: "work3",
+    description: [
+      "Led development of user-friendly and functional web and mobile applications.",
+      "Managed development workflows using React Native and ReactJS.",
+      "Implemented Cypress test suites to ensure application reliability.",
+      "Collaborated asynchronously with product and QA teams across three countries.",
+    ],
   },
   {
     company: "Appcircle",
@@ -51,6 +71,11 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     end: "2020",
     link: "https://www.appcircle.io/",
     id: "work4",
+    description: [
+      "Built frontend application for a mobile CI/CD platform using ReactJS and Redux.",
+      "Designed and styled modern UI using SCSS/CSS.",
+      "Implemented secure user data storage and processing using NodeJS and MongoDB.",
+    ],
   },
   {
     company: "ATP",
@@ -59,6 +84,13 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     end: "2019",
     link: "https://www.atptech.com/",
     id: "work5",
+    description: [
+      "Developed real-time dashboards for online branches of multiple investment banks, providing instant access to critical financial data.",
+      "Utilized ReactJS and GraphQL to build dynamic, interactive user interfaces with enhanced data visualization.",
+      "Designed responsive and visually appealing UI using SCSS/CSS.",
+      "Implemented scalable back-end systems with NodeJS, MongoDB, and GraphQL to handle low-latency real-time data updates.",
+      "Integrated with banking systems to fetch and display live account balances, transactions, and market data.",
+    ],
   },
   {
     company: "Paynet Payment",
@@ -67,6 +99,12 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     end: "2017",
     link: "https://www.paynet.com.tr/",
     id: "work6",
+    description: [
+      "Developed payment systems API and web applications using C#, MVC, .NET, ReactJS, and jQuery.",
+      "Designed secure and scalable RESTful APIs for payment transactions, authentication, and authorization.",
+      "Built responsive and interactive UI with ReactJS, HTML, CSS/SCSS, and jQuery.",
+      "Integrated with third-party payment gateways and financial institutions' APIs to streamline secure payment processing.",
+    ],
   },
 ];
 
