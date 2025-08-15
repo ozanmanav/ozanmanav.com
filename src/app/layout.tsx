@@ -43,6 +43,24 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="icon" href="/ozanmanav-img.png" type="image/png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <meta property="og:title" content="Ozan Manav" />
+        <meta
+          property="og:description"
+          content="Ozan Manav is a passionate software engineer specializing in building high-quality web applications."
+        />
+        <meta property="og:image" content="/ozanmanav-img.png" />
+        <meta property="og:url" content="https://ozanmanav.app/" />
+        <meta property="og:type" content="website" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Ozan Manav" />
+        <meta
+          name="twitter:description"
+          content="Ozan Manav is a passionate software engineer specializing in building high-quality web applications."
+        />
+        <meta name="twitter:image" content="/ozanmanav-img.png" />
       </head>
       <body
         className={`${geist.variable} ${geistMono.variable} bg-white tracking-tight antialiased dark:bg-zinc-950`}
