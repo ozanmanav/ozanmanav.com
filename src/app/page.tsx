@@ -60,7 +60,7 @@ export default function Personal() {
         initial="hidden"
         animate="visible"
       >
-        <h1 className="sr-only">Yakub Alkış — Frontend Developer Portfolio</h1>
+        <h1 className="sr-only">Ozan Manav - Frontend Architect Portfolio</h1>
 
         <motion.section
           variants={VARIANTS_SECTION}
@@ -68,9 +68,14 @@ export default function Personal() {
         >
           <div className="flex-1">
             <p className="text-zinc-600 dark:text-zinc-400">
-              Focused on crafting scalable, high-performance web applications
-              that balance intuitive user experience with robust architecture.
-              Bridging the gap between design vision and technical execution.
+              Engineering scalable, high-performance web applications with a
+              strong focus on frontend architecture. Blending 10+ years of
+              expertise in React and modern web technologies with a passion for
+              clean, modular UI systems. Proven track record in leading teams,
+              optimizing developer workflows, and delivering user experiences
+              that are as intuitive as they are robust. Dedicated to bridging
+              design vision with technical precision for impactful digital
+              products.
             </p>
           </div>
         </motion.section>
@@ -94,6 +99,23 @@ export default function Personal() {
               <MagneticSocialLink key={link.label} link={link.link}>
                 {link.label}
               </MagneticSocialLink>
+            ))}
+          </div>
+        </motion.section>
+
+        <motion.section
+          variants={VARIANTS_SECTION}
+          transition={TRANSITION_SECTION}
+        >
+          <TitleTypography text="Tech Stack" />
+          <div className="flex flex-wrap gap-3 text-base text-zinc-700 dark:text-zinc-300">
+            {TechStack.map((tech) => (
+              <span
+                key={tech}
+                className="inline-flex items-center px-3 py-1 rounded-full border border-zinc-200 dark:border-zinc-700 bg-zinc-50/50 dark:bg-zinc-900 shadow-sm font-medium text-zinc-700 dark:text-zinc-300 transition-colors hover:bg-blue-100 hover:text-blue-700 dark:hover:bg-blue-950 dark:hover:text-blue-300"
+              >
+                {tech}
+              </span>
             ))}
           </div>
         </motion.section>
@@ -123,23 +145,6 @@ export default function Personal() {
                   </p>
                 </div>
               </div>
-            ))}
-          </div>
-        </motion.section>
-
-        <motion.section
-          variants={VARIANTS_SECTION}
-          transition={TRANSITION_SECTION}
-        >
-          <TitleTypography text="Tech Stack" />
-          <div className="flex flex-wrap gap-3 text-base text-zinc-700 dark:text-zinc-300">
-            {TechStack.map((tech) => (
-              <span
-                key={tech}
-                className="inline-flex items-center px-3 py-1 rounded-full border border-zinc-200 dark:border-zinc-700 bg-zinc-50/50 dark:bg-zinc-900 shadow-sm font-medium text-zinc-700 dark:text-zinc-300 transition-colors hover:bg-blue-100 hover:text-blue-700 dark:hover:bg-blue-950 dark:hover:text-blue-300"
-              >
-                {tech}
-              </span>
             ))}
           </div>
         </motion.section>

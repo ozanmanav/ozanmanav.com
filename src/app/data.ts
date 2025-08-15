@@ -22,7 +22,7 @@ type Project = {
 
 export const WORK_EXPERIENCE: WorkExperience[] = [
   {
-    company: "Paynet Payment Systems",
+    company: "Paynet Payment Systems (Acquired by Iyzico)",
     title: "Lead Frontend Engineer",
     start: "2023",
     end: "Present",

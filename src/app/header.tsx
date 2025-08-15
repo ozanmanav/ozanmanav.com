@@ -16,6 +16,13 @@ export function Header() {
           Lead Frontend Architect
         </TextEffect>
       </div>
+
+      <img
+        src="/ozanmanav-img.png"
+        alt="Ozan Manav avatar"
+        className="w-15 h-15 rounded-full object-cover border border-zinc-200 dark:border-zinc-700 shadow-sm"
+        loading="lazy"
+      />
     </header>
   );
 }
