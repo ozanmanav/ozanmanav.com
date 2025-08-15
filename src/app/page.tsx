@@ -96,8 +96,16 @@ export default function Personal() {
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
       >
-        <h3 className="mb-7 text-lg font-medium text-blue-700 dark:text-blue-300 border border-blue-700 dark:border-blue-300 px-4 py-2 rounded-lg inline-block">
-          Selected Projects
+        <h3
+          className="mb-7 text-lg font-medium px-4 py-2 rounded-lg inline-block border transition-colors duration-200 hover:bg-blue-50 dark:hover:bg-blue-900"
+          style={{
+            color: "#27468F",
+            borderColor: "#27468F",
+          }}
+        >
+          <span className="dark:text-[#8AA4FF] dark:border-[#8AA4FF]">
+            Selected Projects
+          </span>
         </h3>
 
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
