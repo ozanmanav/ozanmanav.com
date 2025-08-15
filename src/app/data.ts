@@ -155,3 +155,16 @@ export const SOCIAL_LINKS: SocialLink[] = [
 ];
 
 export const EMAIL = "ozan.manavv@email.com";
+
+export const TechStack = [
+  "React JS",
+  "TypeScript",
+  "Redux",
+  "Node.js",
+  "MongoDB",
+  "GraphQL",
+  "Cypress",
+  "D3.js",
+  "SCSS/CSS",
+  ".NET",
+];

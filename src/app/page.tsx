@@ -1,9 +1,10 @@
 "use client";
 import { motion } from "motion/react";
 import { Magnetic } from "@/components/ui/magnetic";
-import { EMAIL, SOCIAL_LINKS, PROJECTS } from "./data";
+import { EMAIL, SOCIAL_LINKS, PROJECTS, TechStack } from "./data";
 import { TRANSITION_SECTION, VARIANTS_SECTION } from "@/lib/constants";
 import { WorkExperienceSection } from "@/components/ui/work-experience-section";
+import TitleTypography from "@/components/ui/header-typography";
 
 const VARIANTS_CONTAINER = {
   hidden: { opacity: 0 },
@@ -96,17 +97,7 @@ export default function Personal() {
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
       >
-        <h3
-          className="mb-7 text-lg font-medium px-4 py-2 rounded-lg inline-block border transition-colors duration-200 hover:bg-blue-50 dark:hover:bg-blue-900"
-          style={{
-            color: "#27468F",
-            borderColor: "#27468F",
-          }}
-        >
-          <span className="dark:text-[#8AA4FF] dark:border-[#8AA4FF]">
-            Selected Projects
-          </span>
-        </h3>
+        <TitleTypography text="Selected Projects" />
 
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
           {PROJECTS.map((project) => (
@@ -124,6 +115,23 @@ export default function Personal() {
                 </p>
               </div>
             </div>
+          ))}
+        </div>
+      </motion.section>
+      <motion.section
+        variants={VARIANTS_SECTION}
+        transition={TRANSITION_SECTION}
+      >
+        <TitleTypography text="Tech Stack" />
+
+        <div className="flex flex-wrap gap-3 text-base text-zinc-700 dark:text-zinc-300">
+          {TechStack.map((tech) => (
+            <span
+              key={tech}
+              className="inline-flex items-center px-3 py-1 rounded-full border border-zinc-200 dark:border-zinc-700 bg-zinc-50/50 dark:bg-zinc-900 shadow-sm font-medium text-zinc-700 dark:text-zinc-300 transition-colors hover:bg-blue-100 hover:text-blue-700 dark:hover:bg-blue-950 dark:hover:text-blue-300"
+            >
+              {tech}
+            </span>
           ))}
         </div>
       </motion.section>
