@@ -14,7 +14,7 @@ export function WorkExperienceSection() {
 
   return (
     <motion.section variants={VARIANTS_SECTION} transition={TRANSITION_SECTION}>
-      <h3 className="mb-7 text-xl font-bold text-blue-700 dark:text-blue-400 bg-gradient-to-r from-blue-100 via-white to-blue-50 dark:from-blue-950 dark:via-zinc-950 dark:to-blue-900 px-4 py-2 rounded-xl inline-block shadow-sm">
+      <h3 className="mb-7 text-lg font-medium text-blue-700 dark:text-blue-300 border border-blue-700 dark:border-blue-300 px-4 py-2 rounded-lg inline-block">
         Work Experience
       </h3>
       <div className="flex flex-col space-y-2">

@@ -52,7 +52,7 @@ function MagneticSocialLink({
 export default function Personal() {
   return (
     <motion.main
-      className="space-y-24"
+      className="space-y-18"
       variants={VARIANTS_CONTAINER}
       initial="hidden"
       animate="visible"
@@ -70,15 +70,36 @@ export default function Personal() {
         </div>
       </motion.section>
 
+      <motion.section
+        variants={VARIANTS_SECTION}
+        transition={TRANSITION_SECTION}
+        style={{ marginTop: "-24px" }}
+      >
+        <p className="mb-5 text-zinc-600 dark:text-zinc-400">
+          Feel free to contact me at{" "}
+          <a className="underline dark:text-zinc-300" href={`mailto:${EMAIL}`}>
+            {EMAIL}
+          </a>
+        </p>
+        <div className="flex items-center justify-start space-x-3">
+          {SOCIAL_LINKS.map((link) => (
+            <MagneticSocialLink key={link.label} link={link.link}>
+              {link.label}
+            </MagneticSocialLink>
+          ))}
+        </div>
+      </motion.section>
+
       <WorkExperienceSection />
 
       <motion.section
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
       >
-        <h3 className="mb-7 text-xl font-bold text-blue-700 dark:text-blue-400 bg-gradient-to-r from-blue-100 via-white to-blue-50 dark:from-blue-950 dark:via-zinc-950 dark:to-blue-900 px-4 py-2 rounded-xl inline-block shadow-sm">
+        <h3 className="mb-7 text-lg font-medium text-blue-700 dark:text-blue-300 border border-blue-700 dark:border-blue-300 px-4 py-2 rounded-lg inline-block">
           Selected Projects
         </h3>
+
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
           {PROJECTS.map((project) => (
             <div key={project.name} className="space-y-2">
@@ -95,26 +116,6 @@ export default function Personal() {
                 </p>
               </div>
             </div>
-          ))}
-        </div>
-      </motion.section>
-
-      <motion.section
-        variants={VARIANTS_SECTION}
-        transition={TRANSITION_SECTION}
-      >
-        <h3 className="mb-5 text-lg font-medium">Connect</h3>
-        <p className="mb-5 text-zinc-600 dark:text-zinc-400">
-          Feel free to contact me at{" "}
-          <a className="underline dark:text-zinc-300" href={`mailto:${EMAIL}`}>
-            {EMAIL}
-          </a>
-        </p>
-        <div className="flex items-center justify-start space-x-3">
-          {SOCIAL_LINKS.map((link) => (
-            <MagneticSocialLink key={link.label} link={link.link}>
-              {link.label}
-            </MagneticSocialLink>
           ))}
         </div>
       </motion.section>
