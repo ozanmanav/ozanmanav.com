@@ -13,7 +13,7 @@ export function Header() {
           className="text-zinc-600 dark:text-zinc-500"
           delay={0.5}
         >
-          Lead Frontend Architect
+          Frontend Engineer Architect
         </TextEffect>
       </div>
 

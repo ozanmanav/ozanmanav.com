@@ -23,13 +23,13 @@ type Project = {
 export const WORK_EXPERIENCE: WorkExperience[] = [
   {
     company: "Paynet Payment Systems (Acquired by Iyzico)",
-    title: "Lead Frontend Engineer",
+    title: "Senior Frontend Engineer",
     start: "2023",
     end: "Present",
     link: "https://www.paynet.com.tr/",
     id: "work1",
     description: [
-      "Lead frontend architecture initiatives for a high-volume fintech platform.",
+      "Frontend Engineer architecture initiatives for a high-volume fintech platform.",
       "Introduced microfrontend structure and reusable design components across teams.",
       "Reduced frontend build time by 35% through Webpack and CI/CD pipeline optimizations.",
       "Directed async-first development processes across distributed teams.",
@@ -38,7 +38,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
   },
   {
     company: "Axya",
-    title: "Lead Frontend Engineer",
+    title: "Senior Frontend Engineer",
     start: "2021",
     end: "2023",
     link: "https://axya.co/",
